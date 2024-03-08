@@ -1,0 +1,1352 @@
+body{
+    background-color: #2b2b31;
+    font-family: "Open Sans", sans-serif;
+}
+:root{
+    --main-color:#ff5596;
+    --trans-transition:0.5s;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+.main-tittle{
+ font-size: 50px;
+margin: 30px 0;
+ color: white;
+ font-weight:100;
+ color: var(--main-color);
+}
+.main-tittle span{
+    font-weight:lighter;
+}
+
+/* Start Nav bar */
+.NAV{
+    padding: 8px 0;
+    background-color: #2b2b31;
+}
+nav{
+    position: sticky;
+    top: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+}
+nav .imlo{
+   
+    display: flex;
+    align-items: center;
+     gap: 15px;
+    padding: 0 20px;
+    background-color: #28282d;
+}
+nav .imlo:hover{
+    background-color: #2b2b31;
+}
+nav .imlo  .menu i{
+    color: var(--main-color);
+    font-size: 30px;
+    padding: 10px;
+
+}
+nav .basic .nbasic{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+nav .basic .nbasic  .lbasic{
+    padding: 15px;
+    position: relative;
+}
+nav .basic .nbasic  .lbasic a{
+    color: white;
+    transition: var(--trans-transition);
+}
+nav .basic .nbasic  .lbasic a:hover{
+    color: var(--main-color);
+}
+
+nav .basic .nbasic  .lbasic .main{
+    position: absolute;
+    color: black;
+    padding: 0 20px;
+    z-index: -100;
+    top: 60px;
+    color: white;
+    background-color: #2b2b31;
+    font-size: 15px;
+    width: max-content;
+    border-top: solid 3px var(--main-color);
+    display: none;
+}
+nav .basic .nbasic  .lbasic .main .lmain{
+    padding: 10px 20px;
+    transition: var(--trans-transition);
+}
+nav .basic .nbasic  .lbasic .main .lmain:hover{
+    color: var(--main-color);
+}
+/* nav .basic .nbasic  .lbasic .main{
+    display: none;
+} */
+
+nav .serach{
+    position: relative;
+}
+nav .serach input{
+    border: none;
+    outline: none;
+    background-color: #28282d;
+    width: 200px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+
+}
+nav .serach i{
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: #777;
+    transform: translateY(-50%);
+    
+
+}
+nav .sign button{
+    
+    background: linear-gradient(90deg, #ff5860 0%, #ff55a5 100%);
+    box-shadow: 0 0 16px 0 rgba(255,88,96,0.3);
+    position: relative;
+    width: max-content;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    position: relative;
+   transition: var(--trans-transition);
+
+}
+nav .sign button:hover{
+   
+    box-sizing: border-box;
+     background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+
+}
+/* start menu */
+nav .imlo  .menu {
+    position: relative;
+}
+nav .imlo  .menu  .meAll li{
+    list-style:disc ;
+    color: var(--main-color);
+    padding: 15px;
+}
+nav .imlo  .menu  .meAll li a{
+    color: white;
+    transition: var(--trans-transition);
+}
+nav .imlo  .menu  .meAll li a:hover{
+    color: var(--main-color);
+}
+nav .imlo  .menu  .meAll{
+    display: flex;
+    z-index: 5000;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    font-size: 17px;
+    background-color: #2b2b31;
+    gap: 20px;
+    width: 400px;
+    top: 60px;
+    left: -50px;
+    border-top: solid 3px var(--main-color);
+    display: none;
+    
+}
+
+
+
+
+/* end menu */
+
+/* End Nav bar */
+/* Start Sign */
+.SIGNIN{
+    background-image: url(images/section__bg.jpg);
+    width: 100%;
+    height: 100vh;
+    
+    margin:  auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.SIGNIN .indsign{
+    position: relative;
+    background-color: #2b2b31;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 0 16px 0 rgba(255,88,96,0.3);
+    align-items: center;
+}
+.SIGNIN .indsign img{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin: 20px auto;
+}
+.SIGNIN .indsign input{
+    width: 70%;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 20px;
+    background-color: #28282d;
+    margin: 10px auto;
+}
+.SIGNIN .indsign button{
+    text-align: center;
+    display: block;
+    margin:20px  auto;
+    align-items: center;
+    background: linear-gradient(90deg, #ff5860 0%, #ff55a5 100%);
+    box-shadow: 0 0 16px 0 rgba(255,88,96,0.3);
+    border: none;
+    outline: none;
+    width:50%;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: var(--trans-transition);
+
+   
+}
+.SIGNIN .indsign button:hover{
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+
+}
+.SIGNIN .indsign .SHHI{
+    position: absolute;
+    font-size: 25px;
+    color: var(--main-color);
+    right: 80px;
+    bottom: 38%;
+
+}
+.SIGNIN .indsign .SHHI .hide{
+    display: none;
+}
+
+
+
+/* End Sign */
+/* start Header */
+.Header{
+    position: relative;
+    background-image: url(images/home__bg.jpg);
+    width: 100%;
+    z-index: 10;
+    height: 100vh;
+    border-bottom: solid 3px var(--main-color);
+}
+.Header::before{
+    content: " ";
+    position: absolute;
+    background-color:rgb(49 42 51 /90%) ;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+header{
+    position: relative;
+    z-index: 2;
+}
+.TextMove{
+    padding-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.TextMove h1{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2;
+    
+}
+.TextMove span{
+    font-weight: normal;
+}
+.TextMove  .Hicon i{
+  font-size: 50px;
+  
+  color: var(--main-color);
+}
+.Hboxes{
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+.Hboxes .EFbox{
+    position: relative;
+    z-index: 20;
+}
+.Hboxes .Hbox{
+    width: 18%;
+    position: relative;
+    z-index: 3;
+    
+}
+.Hboxes .Hbox .ICvideo{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    z-index: 0;
+    transition: var(--trans-transition);
+    color: var(--main-color);
+    cursor: pointer;
+    
+}
+.Hboxes .Hbox:hover .ICvideo{
+    z-index: 1000;
+}
+.Hboxes .Hbox img{
+    width: 100%;
+    height: 350px;
+    transition: var(--trans-transition);
+    border-radius: 10px;   
+    
+}
+.Hboxes .Hbox:hover img{
+    filter: grayscale(80%);
+}
+
+.Hboxes .Hbox h2{
+    color: white;
+    margin: 15px 0;
+    font-size: 19px;
+    transition: var(--trans-transition)
+}
+.Hboxes .Hbox h2:hover{
+    color: var(--main-color);
+}
+.Hboxes .Hbox p {
+    color: #ff5599;
+    margin: 15px 0;
+
+}
+.Hboxes .Hbox .HboxIcon{
+    display: flex;
+    gap: 8px;
+}
+.Hboxes .Hbox i{
+    color: var(--main-color);
+   
+    font-size: 18px;
+}
+.Hboxes .Hbox h4{
+    color: white;
+}
+/* End Header */
+/* start Recently Updated  */
+.Bbar{
+    display: flex;
+    gap: 20px;
+}
+.Bbar  li{
+    padding: 15px 0;
+    border-bottom: solid 3px var(--trans-transition);
+   
+}
+.Bbar .Bmain{
+    border-bottom: solid 3px var(--main-color);
+
+}
+.Bbar a{
+    color: gray;
+    transition: var(--trans-transition);
+}
+.Bbar a:hover{
+    color: white;
+}
+.Bbar .Bmain a{
+    color: white;
+}
+.Bboxes{
+    margin: 15px 0 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.Bboxes .Bbox{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    width: 32%;
+}
+.Bboxes .Bbox .Bvideo {
+    width: 50%;
+}
+.Bboxes .Bbox .Bvideo .Bimg{
+    /* width: 50%; */
+    position: relative;
+    z-index: 4;
+}
+.Bboxes .Bbox .Bvideo .ICvideo{
+    position: absolute;
+    color: #ff5599;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    transition: var(--trans-transition);
+}
+.Bboxes .Bbox .Bvideo:hover .ICvideo{
+    z-index: 10;
+
+}
+.Bboxes .Bbox .Bimg img{
+    width: 100%;
+    height: 300px;
+    transition: var(--trans-transition);
+}
+.Bboxes .Bbox .Bimg img:hover{
+    filter: grayscale(80%);
+}
+.Bboxes .Bbox .BTEXT >*{
+    margin: 10px 0;
+}
+.Bboxes .Bbox .BTEXT{
+    width: 50%;
+}
+.Bboxes .Bbox .BTEXT h3{
+ color: white;
+ transition: var(--trans-transition );
+}
+.Bboxes .Bbox .BTEXT h3:hover{
+    color: var(--main-color);
+}
+.Bboxes .Bbox .BTEXT span{
+ color: #ff5599;
+}
+.Bboxes .Bbox .BTEXT p{
+    color: #ccc;
+}
+.Bboxes .Bbox .BTEXT .BboxIcon{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.Bboxes .Bbox .BTEXT .BboxIcon i{
+ color: var(--main-color);
+}
+.Bboxes .Bbox .BTEXT .BboxIcon h4{
+color: white;
+}
+.Bboxes .Bbox .BTEXT .BboxIcon p{
+    border: solid 1px gray;
+    padding: 2px;
+    font-size: 13px;
+}
+.Recently button{
+    text-align: center;
+    display: block;
+    margin:20px  auto;
+    align-items: center;
+    background: linear-gradient(90deg, #ff5860 0%, #ff55a5 100%);
+    box-shadow: 0 0 16px 0 rgba(255,88,96,0.3);
+    border: none;
+    outline: none;
+    width: max-content;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: var(--trans-transition);
+
+   
+}
+.Recently button:hover{
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+
+}
+/* .NEWitems{
+    display: none;
+}
+ */
+/* Start MOVIES && TV SHOWS ANIEM */
+.MOVboxes{
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.MOVboxes .MOANIM{
+    width: 15%;
+}
+.MOVboxes .MOVbox .movimg {
+    position: relative;
+}
+.MOVboxes .MOVbox .movimg i {
+    position: absolute;
+    top: 40%;
+    z-index: -1;
+    left: 50%;
+    transition: var(--trans-transition);
+    transform: translate(-40%,-50%);
+    font-size: 50px;
+    color: var(--main-color);
+}
+.MOVboxes .MOVbox:hover .movimg i{
+    z-index: 4;
+}
+.MOVboxes .MOVbox .movimg img{
+    width: 100%;
+    transition: var(--trans-transition);
+    
+}
+.MOVboxes .MOVbox:hover .movimg img{
+    filter: grayscale(60%);
+}
+.MOVboxes .MOVbox h3{
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: var(--trans-transition);
+}
+.MOVboxes .MOVbox h3:hover{
+    color: var(--main-color);
+}
+.MOVboxes .MOVbox span{
+    margin: 10px 0;
+    color: #ff55a5;
+}
+.MOVboxes .MOVbox  .BboxIcon{
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+.MOVboxes .MOVbox  .BboxIcon i{
+    color: var(--main-color);
+}
+.MOVboxes .MOVbox  .BboxIcon h4{
+    color: white;
+}
+.move{
+    display: none;
+}
+
+/* End MOVIES && TV SHOWS ANIEM */
+
+
+
+/* end Recently Updated  */
+
+/* Start Now Watchin */
+.WATHING{
+    background-color: #28282d;
+    padding: 20px 0;
+}
+.WATHING .Nboxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.WATHING .Nboxes  .Nbox{
+    width: 15%;
+    position: relative;
+    z-index: 4;
+    
+}
+.WATHING .Nboxes  .Nbox .ICvideo{
+    position: absolute;
+    font-size: 50px;
+    top: 30%;
+    z-index: -1;
+    color: var(--main-color);
+    left: 50%;
+    transform: translate(-30%,-50%);
+    transition: var(--trans-transition);
+}
+.WATHING .Nboxes  .Nbox:hover .ICvideo{
+    z-index: 10;
+}
+.WATHING .Nboxes  .Nbox img{
+    width: 100%;
+    transition: var(--trans-transition);
+    border-radius: 8px;
+}
+.WATHING .Nboxes  .Nbox img:hover{
+    filter: grayscale(80%);
+}
+.WATHING .Nboxes  .Nbox  > *{
+    margin: 10px 0;
+}
+.WATHING .Nboxes  .Nbox h2{
+    margin-top: 10px;
+    transition: var(--trans-transition);
+    color: white;
+    font-size: 15px;
+}
+.WATHING .Nboxes  .Nbox h2:hover{
+    color: #ff5599;
+}
+.WATHING .Nboxes  .Nbox p{
+    color: var(--main-color);
+}
+.WATHING .Nboxes  .Nbox .HboxIcon{
+    display: flex;
+    gap: 5px;
+}
+.WATHING .Nboxes  .Nbox .HboxIcon i{
+    color: var(--main-color);
+}
+.WATHING .Nboxes  .Nbox .HboxIcon h4{
+    color: white;
+}
+
+/* End Now Watchin */
+/* start Select Your Plan */
+.PLboxes{
+    display: flex;
+    margin: 55px 0;
+    gap: 20px;
+}
+.PLboxes .PLbox{
+    width: 30% ;
+    padding: 10px;
+    background-color: #28282d;
+    position: relative;
+}
+.PLboxes  .Premium{
+    border-top: 3px solid var(--main-color);
+}
+.PLboxes .PLbox .PLbar{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-between;
+}
+.PLboxes .PLbox .PLbar h1{
+    font-weight: normal;
+    color: white;
+}
+.PLboxes .PLbox .PLbar h2{
+    font-weight: normal;
+    color: #ff55a5;
+}
+.PLboxes .PLbox ul{
+    width: max-content;
+    margin-left: 20px;
+}
+.PLboxes .PLbox li{
+   padding: 10px ;
+   margin: 10px 0;
+
+    list-style:disc;
+    color: var(--main-color);
+    
+}
+.PLboxes .PLbox li a{
+    color: white;
+}
+.PLboxes .PLbox button{
+    display: block;
+    text-align: center;
+    margin: 20px auto ;
+    align-items: center;
+    width: 80%;
+    background: linear-gradient(90deg, #ff5860 0%, #ff55a5 100%);
+    box-shadow: 0 0 16px 0 rgba(255,88,96,0.3);
+    transition: var(--trans-transition);
+    outline: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+
+
+}
+.PLboxes .PLbox button:hover{
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+
+}
+/* end Select Your Plan */
+/* start  Our Partners*/
+.Partners{
+    padding: 25px 0 60px 0;
+    border-bottom: solid 3px var(--main-color);
+}
+.Partners p {
+    color: #ccc;
+    line-height: 1.5;
+}
+.Partners span a{
+    color: var(--main-color);
+}
+.Partners span a{
+    color: #ff5860;
+    transition: var(--trans-transition);
+}
+.Partners span a:hover{
+    color: #ff5596;
+}
+.partboxes{
+    margin: 20px 0;
+    display: flex;
+    gap: 1px;
+}
+.partboxes .partbox{
+    width: 13%;
+    cursor: pointer;
+    /* background-color:#28282d; */
+    padding: 30px 20px;
+    position: relative;
+}
+.partboxes .partbox::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    transition: var(--trans-transition);
+    background-color: rgb(0 0 0 /30%);
+
+}
+.partboxes .partbox:hover:before{
+    background-color: rgb(0 0 0 /0%);
+
+}
+.partboxes .partbox img{
+    width: 100%;
+}
+
+/* end  Our Partners*/
+/* START  Contact */
+.CONTACT{
+    border-bottom: solid 3px var(--main-color);
+}
+.conbasics{
+    display: flex;
+    gap: 10px;
+}
+.conbasics .context{
+    width: 40%;
+}
+.conbasics .context h1{
+    color: white;
+    font-weight: normal;
+    margin: 20px 0;
+    font-size: 30px;
+
+}
+.conbasics .context p {
+    color: #777;
+    margin: 20px 0;
+    line-height: 1.5;
+
+
+}
+.conbasics .context h3 a{
+ color: #777;
+ transition: var(--trans-transition);
+ margin: 20px 0;
+}
+.conbasics .context h3 a:hover{
+    color: var(--main-color);
+
+}
+.conbasics .context .CONicon{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+
+}
+.conbasics .context .CONicon i{
+ color: #777;
+ transition: var(--trans-transition);
+ font-size: 30px;
+}
+.conbasics .context .CONicon i:hover{
+    color: white;
+}
+
+.conbasics  .coninput{
+    width: 60%;
+    padding: 20px;
+    background-color: #28282d;
+}
+.conbasics  .coninput input{
+    width: 90%;
+    padding: 20px;
+    margin: 20px 0;
+    background-color:#2b2b31;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: white;
+    border: solid 2px transparent;
+    transition: var(--trans-transition);
+
+
+
+}
+.conbasics  .coninput input:hover,.conbasics  .coninput textarea:hover{
+    border: solid 2px var(--main-color);
+
+}
+.conbasics  .coninput .spc{
+    width: 40%;
+    margin-left: 10px;
+}
+.conbasics  .coninput textarea{
+    width: 90%;
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    background-color:#2b2b31;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    border: solid 2px transparent;
+    transition: var(--trans-transition);
+
+}
+.conbasics  .coninput button{
+    display: block;
+    text-align: center;
+    margin: 20px auto ;
+    align-items: center;
+    width: 40%;
+    background: linear-gradient(90deg, #ff5860 0%, #ff55a5 100%);
+    box-shadow: 0 0 16px 0 rgba(255,88,96,0.3);
+    transition: var(--trans-transition);
+    outline: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+
+}
+.conbasics  .coninput button:hover{
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+
+
+}
+/*  END  Contact*/
+
+/* start Footer */
+.FOOTER{
+    padding: 20px 0;
+}
+.footmain{
+    display: flex;
+    gap: 20px;
+    margin:  30px 0;
+}
+.footmain  .basicFOOT{
+    width: 23%;
+} 
+.footmain  .basicFOOT img{
+    width: max-content;
+}
+.footmain  .basicFOOT p{
+    margin: 20px 0;
+    color: white;
+    line-height: 1.5;
+}
+.footmain  .basicFOOT .FOOTicon{
+    display: flex;
+    gap: 15px;
+    
+}
+.footmain  .basicFOOT .FOOTicon i{
+    color: white;
+    font-size: 30px;
+
+}
+.footmain  ul{
+
+    width: 18%;
+    
+
+
+}
+
+.footmain  li {
+    margin: 15px 0;
+}
+.footmain  li a{
+    color: white;
+    transition: var(--trans-transition);
+    color: #ccc;
+}
+.footmain  li a:hover{
+    color: var(--main-color);
+
+}
+
+.footmain .ffmain{
+    color: white;
+    font-weight: bold;
+}
+footer .mine{
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: solid 3px var(--main-color);
+ }
+footer .mine p{
+    font-size: 20px;
+ }
+ footer .mine  a{
+    color: #ff5860;
+    transition: var(--main-color);
+}
+ footer .mine  a:hover{
+    color: #ff55a5;
+
+ }
+/* End Footer */
+
+
+@media screen and (max-width : 480px) {
+    .main-tittle{
+        font-size: 30px;
+        text-align: center;
+
+    }
+    nav .basic .nbasic{
+        display: none;
+
+    }
+
+    .nav .serach{
+        display: none;
+    }
+    .Header{
+        height: max-content;
+    }
+   
+    .TextMove h1{
+        font-size: 20px;
+    }
+    .TextMove  .Hicon i{
+        display: none;
+    }
+    .Hboxes{
+        flex-direction: column;
+    }
+    .Hboxes .Hbox{
+        width: 100%;
+        height: 100%;
+    }
+    /* start Recently Updated  */
+    .Bbar  li{
+        padding: 0;
+        text-align: center;
+       
+        width: max-content;
+        font-size: 15px;
+    }
+    .Bboxes{
+        flex-direction: column;
+    }
+    .Bboxes .Bbox{
+        flex-direction: column;
+        width: 100%;
+    }
+    .Bboxes .Bbox .Bvideo{
+        width: 100%;
+    }
+    .Bboxes .Bbox .BTEXT{
+        width: 100%;
+    }
+   /*  .NEWitems{
+        display: block;
+    }
+    .move{
+        display: none;
+    }
+ */
+ /* end Recently Updated  */
+
+ /* Start Now Watchin */
+ .WATHING .Nboxes{
+    flex-direction: column;
+ }
+ .WATHING .Nboxes  .Nbox{
+    width: 100%;
+ }
+ /* End Now Watchin */
+ /* start Select Your Plan */
+ .PLboxes{
+    flex-direction: column;
+ }
+ .PLboxes .PLbox{
+    width: 100%;
+ }
+
+ /* end Select Your Plan */
+
+ /* start  Our Partners*/
+
+ .partboxes{
+   flex-direction: column;
+ }
+ .partboxes .partbox{
+    width: 100%;
+ }
+ /* end  Our Partners*/
+ /* START  Contact */
+ .conbasics{
+    flex-direction: column-reverse;
+ }
+ .conbasics .context{
+    width: 100%;
+ }
+ .conbasics .coninput{
+    width: 100%;
+    padding: 5px 10px;
+ }
+ .conbasics  .coninput .spc{
+    width: 90%;
+ }
+ /* end  Contact */
+ /* start Footer */
+ .footmain{
+    flex-wrap: wrap;
+ }
+ .footmain  .basicFOOT{
+    width: 100%;
+ }
+ .footmain  ul{
+    width: 40%;
+ }
+ /* end Footer */
+
+
+
+}
+@media screen and (min-width : 481px) and (max-width : 770px){
+    .main-tittle{
+        font-size: 30px;
+        text-align: center;
+
+    }
+    /* nav .basic .nbasic{
+        display: none;
+
+    } */
+    
+    .NAV .container{
+        width: 100%;
+    }
+    .nav .serach{
+        display: none;
+    }
+    .Header{
+        height: max-content;
+    }
+   
+    .TextMove h1{
+        font-size: 30px;
+    }
+    .TextMove  .Hicon i{
+        display: none;
+    }
+    .Hboxes{
+        flex-wrap: wrap;
+    }
+    .Hboxes .Hbox{
+        width: 45%;
+        height: 100%;
+    }
+    /* start Recently Updated  */
+    .Bbar  li{
+        padding: 0;
+        text-align: center;
+       
+        width: max-content;
+        font-size: 15px;
+    }
+    .Bboxes{
+        flex-direction: column;
+    }
+    .Bboxes .Bbox{
+        flex-direction: column;
+        width: 100%;
+    }
+    .Bboxes .Bbox .Bvideo{
+        width: 100%;
+    }
+    .Bboxes .Bbox .BTEXT{
+        width: 100%;
+    }
+     /* .NEWitems{
+        display: block;
+    }
+    .move{
+        display: none;
+    } */
+    .MOVboxes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .MOVboxes .MOANIM{
+           width: 32%;
+           
+           display: flex;
+    }
+    .MOVboxes .MOVbox{
+        width: 100%;
+       
+       
+    }
+    .MOVboxes{
+        display: none;
+    }
+ 
+ /* end Recently Updated  */
+
+ /* Start Now Watchin */
+ .WATHING .Nboxes{
+    flex-wrap: wrap;
+ }
+ .WATHING .Nboxes  .Nbox{
+    width: 46%;
+ }
+ /* End Now Watchin */
+ /* start Select Your Plan */
+ .PLboxes{
+    flex-direction: column;
+ }
+ .PLboxes .PLbox{
+    width: 100%;
+ }
+
+ /* end Select Your Plan */
+
+ /* start  Our Partners*/
+
+ .partboxes{
+   flex-direction: column;
+ }
+ .partboxes .partbox{
+    width: 100%;
+ }
+ /* end  Our Partners*/
+ /* START  Contact */
+/*  .conbasics{
+    
+ } */
+ .conbasics .context{
+    width: 50%;
+ }
+ .conbasics .coninput{
+    width: 50%;
+    padding: 5px 0;
+ }
+ .conbasics  .coninput .spc{
+    width: 90%;
+ }
+ /* end  Contact */
+ /* start Footer */
+ .footmain{
+    flex-wrap: wrap;
+ }
+ .footmain  .basicFOOT{
+    width: 100%;
+ }
+ .footmain  ul{
+    width: 40%;
+ }
+ /* end Footer */
+ 
+
+
+
+}
+
+@media screen and (min-width : 771px) and (max-width : 1100px){
+    .main-tittle{
+        font-size: 30px;
+        text-align: center;
+
+    }
+ 
+    
+    .NAV .container{
+        width: 100%;
+    }
+   
+    .Header{
+        height: max-content;
+    }
+   
+    .TextMove h1{
+        font-size: 30px;
+    }
+    .TextMove  .Hicon i{
+        display: none;
+    }
+    .Hboxes{
+        flex-wrap: wrap;
+    }
+    .Hboxes .Hbox{
+        width: 30%;
+        height: 100%;
+    }
+    /* start Recently Updated  */
+    .Bbar  li{
+        padding: 0;
+        text-align: center;
+       
+        width: max-content;
+        font-size: 15px;
+    }
+    .Bboxes{
+        flex-wrap: wrap;
+    }
+    .Bboxes .Bbox{
+        flex-direction: column;
+        width: 47%;
+    }
+    .Bboxes .Bbox .Bvideo{
+        width: 100%;
+    }
+    .Bboxes .Bbox .BTEXT{
+        width: 100%;
+    }
+    .move{
+        display: none;
+    }
+     /* .NEWitems{
+        display: block;
+    }
+    .move{
+        display: none;
+    } */
+    .MOVboxes{
+        display: none;
+    }
+    .MOVboxes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .MOVboxes .MOANIM{
+           width: 32%;
+           
+           display: flex;
+    }
+    .MOVboxes .MOVbox{
+        width: 100%;
+       
+       
+    }
+    .MOVboxes{
+        display: none;
+    }
+ 
+ /* end Recently Updated  */
+
+ /* Start Now Watchin */
+ .WATHING .Nboxes{
+    flex-wrap: wrap;
+ }
+ .WATHING .Nboxes  .Nbox{
+    width: 46%;
+ }
+ /* End Now Watchin */
+ /* start Select Your Plan */
+/*  .PLboxes{
+    flex-direction: column;
+ }
+ .PLboxes .PLbox{
+    width: 100%;
+ }
+ */
+ /* end Select Your Plan */
+
+ /* start  Our Partners*/
+
+ .partboxes{
+   flex-direction: column;
+ }
+ .partboxes .partbox{
+    width: 100%;
+ }
+ /* end  Our Partners*/
+ /* START  Contact */
+/*  .conbasics{
+    
+ } */
+/*  .conbasics .context{
+    width: 50%;
+ }
+ .conbasics .coninput{
+    width: 50%;
+    padding: 5px 0;
+ } */
+ .conbasics  .coninput .spc{
+    width: 90%;
+ }
+ /* end  Contact */
+ /* start Footer */
+/*  .footmain{
+    flex-wrap: wrap;
+ }
+ .footmain  .basicFOOT{
+    width: 100%;
+ }
+ .footmain  ul{
+    width: 40%;
+ } */
+ /* end Footer */
+
+}
+
+
